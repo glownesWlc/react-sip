@@ -456,7 +456,7 @@ export default class SipProvider extends React.Component<JsSipConfig, JsSipState
     try {
       const socket = new JsSIP.WebSocketInterface(`${secure ? 'wss' : 'ws'}://${host}:${port}${pathname}`);
       this.ua = new JsSIP.UA({
-        uri: `sip:${user}@${host}`,
+        uri: "sip:1001@zfakon4cfv.dev.cpaaslabs.net", // change by greg
         password,
         sockets: [socket],
         register: autoRegister,
